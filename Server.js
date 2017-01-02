@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 
 const Util = require('./utils/Util');
+const confExpress = require('./conf/express-conf');
 
 // Routes
 const userRoutes = require('./routes/user/UserRoutes');
@@ -13,6 +14,8 @@ const Logger = Util.logger();
 dotenv.config();
 
 const app = express();
+
+confExpress(app);
 
 app.get('/', (req, res) => {
   res.send('Hello World');
