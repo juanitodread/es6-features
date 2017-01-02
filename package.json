@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "private": true,
+  "author": "juanitodread",
+  "license": "apache-v2",
+  "scripts": {
+    "dev": "NODE_PATH=$NODE_PATH:. nodemon Server.js",
+    "start": "NODE_PATH=$NODE_PATH:. node Server.js",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "winston": "*",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0"
+  },
+  "dependencies": {
+    "winston": "*",
+    "mongoose": "^4.5.9",
+    "express": "^4.14.0",
+    "dotenv": "^2.0.0",
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3"
+  }
+}
