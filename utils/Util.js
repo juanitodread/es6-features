@@ -1,8 +1,9 @@
 const Winston = require('winston');
 const tsFormat = () => (new Date());
 
-const Util = {
-  logger: () => {
+class Util {
+
+  static getLogger() {
     const logger = new (Winston.Logger)({
       level: 'debug',
       transports: [
@@ -14,6 +15,6 @@ const Util = {
     });
     return logger;
   }
-};
+}
 
 module.exports = Util;

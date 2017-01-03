@@ -1,7 +1,7 @@
 const express = require('express');
 const rpn = require('request-promise-native');
 const Util = require('../../utils/Util');
-const Logger = Util.logger();
+const Logger = Util.getLogger();
 
 /* const TODO = (req, res) => {
   Logger.debug(res);

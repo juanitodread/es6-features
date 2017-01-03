@@ -8,8 +8,8 @@ const confExpress = require('./conf/express-conf');
 const userRoutes = require('./routes/user/UserRoutes');
 const forecastRoutes = require('./routes/service/ForecastRoutes');
 
-// Logs
-const Logger = Util.logger();
+// Logger
+const Logger = Util.getLogger();
 
 dotenv.config();
 

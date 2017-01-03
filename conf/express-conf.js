@@ -1,5 +1,5 @@
 const Util = require('../utils/Util');
-const Logger = Util.logger();
+const Logger = Util.getLogger();
 
 const expressConf = (app) => {
   app.use((req, res, next) => {
